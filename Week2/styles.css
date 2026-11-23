@@ -1,0 +1,103 @@
+
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "header header"
+        "header2 header2"
+        "menu content"
+        "footer footer";
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 4px;
+    background-color: white;
+    padding: 5px;
+}
+
+.container div {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid pink;
+}
+
+.container div.header {
+    grid-area: header;
+    text-align: center;
+    height: 80px;
+}
+
+.container div.header2 {
+    grid-area: header2;
+    text-align: center;
+    height: 80px;
+}
+
+.container div.menu {
+    grid-area: menu;
+    text-align: left;
+    height: 320px;
+}
+
+.container div.content {
+    grid-area: content;
+    height: 320px;
+    vertical-align: text-top;
+}
+
+.container div.footer {
+    grid-area: footer;
+    text-align: center;
+    height: 80px;
+}
+
+
+.im1 {
+    width: 124px;
+    height: 98px;
+}
+
+.im2 {
+    width: 124px;
+    height: 98px;
+}
+
+.im3 {
+    width: 124px;
+    height: 98px;
+}
+
+
+.content input {
+    width: 220px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid  black;
+    margin-left: 55px;
+}
+
+
+.content textarea {
+    width: 230px;
+    height: 125px;
+    background-color: white;
+    border: 1px solid  black;
+    margin-left: 35px;
+    vertical-align: top;
+}
+
+
+
+.content button {
+    background-color: white;
+    color: black
+    ;
+    border: 1px solid black;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.footer h4 {
+    font-style: normal;
+    font-weight: normal;
+}
